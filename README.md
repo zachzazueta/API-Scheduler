@@ -6,7 +6,7 @@ It looks like one way to do this will be to write a script in Python and then us
 
 To begin this project, I wrote out the following script; this is a call to the CitiBike station information API - when you call this API, a file with information about each station is returned. The goal is to query information about each station daily in 15 minute intervals from the hours of 8am to 8pm. Here is the code:
 
-'''
+```
 import pandas as pd 
 import requests
 import time
@@ -34,4 +34,4 @@ day = stamp
 writer = pd.ExcelWriter('C:\Users\zazue\Data Science\Capstone\{}.xlsx'.format(stamp))
 j.to_excel(writer, sheet_name=day)
 writer.save()
-'''
+```
