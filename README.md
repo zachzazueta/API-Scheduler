@@ -35,3 +35,5 @@ writer = pd.ExcelWriter('C:\Users\zazue\Data Science\Capstone\{}.xlsx'.format(st
 j.to_excel(writer, sheet_name=day)
 writer.save()
 ```
+
+After some initial work, it actually looks like this will need to be done with Postman, so I have downloaded that and will be working through setting that up to query
